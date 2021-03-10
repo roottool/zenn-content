@@ -1,0 +1,12 @@
+{
+  "name": "zenn-content",
+  "version": "1.0.0",
+  "description": "My content of Zenn",
+  "repository": "https://github.com/roottool/zenn-content.git",
+  "author": "roottool",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "zenn-cli": "^0.1.75"
+  }
+}
