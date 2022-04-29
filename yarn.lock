@@ -849,7 +849,7 @@ ws@^7.4.6:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.7.tgz#9e0ac77ee50af70d58326ecff7e85eb3fa375e67"
   integrity sha512-KMvVuFzpKBuiIXW3E4u3mySRO2/mCHSyZDJQM5NQ9Q9KHWHWh0NHgfbRMLLrceUK5qAL4ytALJbpRMjixFZh8A==
 
-zenn-cli@^0.1.108:
+zenn-cli@0.1.108:
   version "0.1.108"
   resolved "https://registry.yarnpkg.com/zenn-cli/-/zenn-cli-0.1.108.tgz#43e4f95e9dea22eba7fc3544a102f96e735df468"
   integrity sha512-dbcqwSQVsWw2XpNWROKxvXXxdC051ykEpBkm/ozlA5jsrLi+zx2UqWIoiia5HsLSSARPkfDWaAfIzn5UoiMNvA==
