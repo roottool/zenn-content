@@ -1,16 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "group:allNonMajor", "helpers:pinGitHubActionDigests"],
+  "extends": ["config:base", "group:allNonMajor"],
   "assignees": ["@roottool"],
   "labels": ["dependencies"],
   "timezone": "Asia/Tokyo",
+  "automerge": true,
   "vulnerabilityAlerts": {
     "labels": ["security"]
-  },
-  "packageRules": [
-    {
-      "updateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
-    }
-  ]
+  }
 }
