@@ -5,6 +5,7 @@
   "labels": ["dependencies"],
   "timezone": "Asia/Tokyo",
   "automerge": true,
+  "ignoreTests": true,
   "vulnerabilityAlerts": {
     "labels": ["security"]
   }
