@@ -13,6 +13,6 @@
   },
   "packageManager": "pnpm@8.15.1",
   "devDependencies": {
-    "zenn-cli": "0.1.152"
+    "zenn-cli": "0.1.153"
   }
 }
