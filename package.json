@@ -11,7 +11,7 @@
     "new:article": "zenn new:article",
     "new:book": "zenn new:book"
   },
-  "packageManager": "pnpm@9.0.5",
+  "packageManager": "pnpm@9.0.6",
   "devDependencies": {
     "zenn-cli": "0.1.153"
   }
