@@ -1,44 +1,38 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-		"schedule:daily",
-		":enableVulnerabilityAlertsWithLabel(security)"],
-  "labels": ["dependencies"],
+    "config:best-practices"
+  ],
   "timezone": "Asia/Tokyo",
-	"prHourlyLimit": 4,
-	"prConcurrentLimit": 10,
+  "schedule": [
+    "before 5am on Monday"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "configMigration": true,
   "automerge": true,
-	"lockFileMaintenance": {
-		"enabled": true,
-		"schedule": ["before 3am on the first day of the month"]
-	},
-	"packageRules": [
-		{
-			"groupName": "all non-major devDependencies",
-			"groupSlug": "all-devDependencies-minor-patch",
-			"matchPackagePatterns": ["*"],
-			"matchUpdateTypes": ["minor", "patch"],
-			"automerge": true
-		},
-		{
-			"groupName": "all non-major dependencies",
-			"groupSlug": "all-dependencies-minor-patch",
-			"matchDepTypes": ["dependencies"],
-			"matchPackagePatterns": ["*"],
-			"matchUpdateTypes": ["minor", "patch"],
-			"automerge": true
-		},
-		{
-			"groupName": "GitHub Action digests",
-			"matchDepTypes": ["action"],
-			"pinDigests": true,
-			"automerge": true
-		},
-		{
-			"groupName": "Type definitions Group",
-			"matchPackagePrefixes": ["@types/"],
-			"automerge": true
-		}
-	]
+  "prHourlyLimit": 4,
+  "prConcurrentLimit": 10,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": [
+      "before 5am on Monday"
+    ]
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    },
+    {
+      "groupName": "GitHub Action digests",
+      "matchDepTypes": [
+        "action"
+      ],
+      "pinDigests": true
+    }
+  ]
 }
