@@ -2,17 +2,23 @@
   "name": "zenn-content",
   "version": "1.0.0",
   "description": "My content of Zenn",
-  "repository": "https://github.com/roottool/zenn-content.git",
-  "author": "roottool",
-  "license": "MIT",
   "private": true,
+  "author": "roottool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roottool/zenn-content.git"
+  },
+	"bugs": {
+		"url": "https://github.com/roottool/zenn-content/issues"
+	},
+	"homepage": "https://github.com/roottool/zenn-content#readme",
   "scripts": {
     "preview": "zenn preview",
     "new:article": "zenn new:article",
     "new:book": "zenn new:book"
   },
-  "packageManager": "pnpm@10.25.0",
   "devDependencies": {
     "zenn-cli": "0.2.10"
-  }
+  },
+  "license": "MIT"
 }
