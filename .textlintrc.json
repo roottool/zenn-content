@@ -8,9 +8,7 @@
 		"preset-ja-technical-writing": true,
 		"preset-jtf-style": true,
 		"prh": {
-			"rulePaths": [
-				"./prh.yml"
-			]
+			"rulePaths": ["./prh.yml"]
 		},
 		"@textlint-ja/preset-ai-writing": true
 	}
