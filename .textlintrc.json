@@ -1,0 +1,15 @@
+{
+	"plugins": {},
+	"filters": {},
+	"rules": {
+		"ja-unnatural-alphabet": true,
+		"max-ten": true,
+		"no-doubled-joshi": true,
+		"preset-ja-technical-writing": true,
+		"preset-jtf-style": true,
+		"prh": {
+			"rulePaths": ["./prh.yml"]
+		},
+		"@textlint-ja/preset-ai-writing": true
+	}
+}

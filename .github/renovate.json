@@ -1,38 +1,25 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:best-practices"
-  ],
-  "timezone": "Asia/Tokyo",
-  "schedule": [
-    "before 5am on Monday"
-  ],
-  "labels": [
-    "dependencies"
-  ],
-  "configMigration": true,
-  "automerge": true,
-  "prHourlyLimit": 4,
-  "prConcurrentLimit": 10,
-  "lockFileMaintenance": {
-    "enabled": true,
-    "schedule": [
-      "before 5am on Monday"
-    ]
-  },
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ]
-    },
-    {
-      "groupName": "GitHub Action digests",
-      "matchDepTypes": [
-        "action"
-      ],
-      "pinDigests": true
-    }
-  ]
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:best-practices"],
+	"timezone": "Asia/Tokyo",
+	"schedule": ["before 5am on Monday"],
+	"labels": ["dependencies"],
+	"configMigration": true,
+	"automerge": true,
+	"prHourlyLimit": 4,
+	"prConcurrentLimit": 10,
+	"lockFileMaintenance": {
+		"enabled": true,
+		"schedule": ["before 5am on Monday"]
+	},
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["minor", "patch"]
+		},
+		{
+			"groupName": "GitHub Action digests",
+			"matchDepTypes": ["action"],
+			"pinDigests": true
+		}
+	]
 }
