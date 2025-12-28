@@ -1,0 +1,43 @@
+name: CI
+run-name: "${{ github.workflow }} (${{ github.ref_name }}): ${{ github.event.pull_request.title }}"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        with:
+          persist-credentials: false
+
+      - name: Initialize
+        uses: ./.github/actions/setup-environment
+
+      - name: Run Lint
+        run: bun run check:ci
+
+  status-check:
+    name: Status Check
+    runs-on: ubuntu-slim
+    timeout-minutes: 1
+    needs: [lint]
+    if: always() && (contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled'))
+    steps:
+      - run: exit 1
