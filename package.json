@@ -16,12 +16,17 @@
     "preview": "zenn preview",
     "new:article": "zenn new:article",
     "new:book": "zenn new:book",
-    "lint": "markdownlint-cli2 \"**/*.md\"",
-    "fix": "markdownlint-cli2 \"**/*.md\" --fix"
+    "lint:markdownlint": "markdownlint-cli2 README.md \".github/**/*.md\" \"articles/**/*.md\" \"books/**/*.md\"",
+    "lint:textlint": "textlint \"**/*.md\"",
+    "lint": "npm-run-all2 lint:markdownlint lint:textlint",
+    "fix:markdownlint": "markdownlint-cli2 README.md \".github/**/*.md\" \"articles/**/*.md\" \"books/**/*.md\" --fix",
+    "fix:textlint": "textlint \"**/*.md\" --fix",
+    "fix": "npm-run-all2 fix:markdownlint fix:textlint"
   },
   "devDependencies": {
     "@textlint-ja/textlint-rule-preset-ai-writing": "^1.6.1",
     "markdownlint-cli2": "^0.20.0",
+    "npm-run-all2": "^8.0.4",
     "textlint": "^15.5.0",
     "textlint-rule-ja-unnatural-alphabet": "^2.0.1",
     "textlint-rule-max-ten": "^5.0.0",
