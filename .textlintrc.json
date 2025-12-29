@@ -1,6 +1,10 @@
 {
 	"plugins": {},
-	"filters": {},
+	"filters": {
+		"allowlist": {
+			"allow": [":::", "/:::details\\s.*/"]
+		}
+	},
 	"rules": {
 		"ja-unnatural-alphabet": true,
 		"max-ten": true,
