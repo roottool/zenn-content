@@ -18,14 +18,14 @@
 		"new:book": "zenn new:book",
 		"check:markdownlint": "markdownlint-cli2 README.md \".github/**/*.md\" \"articles/**/*.md\" \"books/**/*.md\"",
 		"check:textlint": "textlint --cache \"**/*.md\"",
-		"check:prettier": "prettier --cache --check \"**/*.{json,jsonc,yml,yaml}\"",
+		"check:prettier": "prettier --cache --check \"**/*.{md,json,jsonc,yml,yaml}\"",
 		"check": "npm-run-all2 check:markdownlint check:textlint check:prettier",
 		"check:textlint:ci": "textlint \"**/*.md\"",
 		"check:prettier:ci": "prettier --check \"**/*.{json,jsonc,yml,yaml}\"",
 		"check:ci": "npm-run-all2 check:markdownlint check:textlint:ci check:prettier:ci",
 		"fix:markdownlint": "markdownlint-cli2 README.md \".github/**/*.md\" \"articles/**/*.md\" \"books/**/*.md\" --fix",
 		"fix:textlint": "textlint \"**/*.md\" --fix",
-		"fix:prettier": "prettier --cache --write \"**/*.{json,jsonc,yml,yaml}\"",
+		"fix:prettier": "prettier --cache --write \"**/*.{md,json,jsonc,yml,yaml}\"",
 		"fix": "npm-run-all2 fix:markdownlint fix:textlint fix:prettier"
 	},
 	"devDependencies": {
