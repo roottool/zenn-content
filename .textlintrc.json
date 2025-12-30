@@ -2,7 +2,7 @@
 	"plugins": {},
 	"filters": {
 		"allowlist": {
-			"allow": [":::", "/:::details\\s.*/"]
+			"allow": [":::", "::::", "/:::details\\s.*/", "/:::message\\s.*/"]
 		}
 	},
 	"rules": {
