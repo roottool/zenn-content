@@ -30,7 +30,7 @@
 	},
 	"devDependencies": {
 		"@textlint-ja/textlint-rule-preset-ai-writing": "1.6.1",
-		"markdownlint-cli2": "0.20.0",
+		"markdownlint-cli2": "0.22.0",
 		"npm-run-all2": "8.0.4",
 		"prettier": "3.7.4",
 		"textlint": "15.5.2",
