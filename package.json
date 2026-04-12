@@ -29,7 +29,7 @@
 		"fix": "npm-run-all2 fix:markdownlint fix:textlint fix:prettier"
 	},
 	"devDependencies": {
-		"@textlint-ja/textlint-rule-preset-ai-writing": "1.6.1",
+		"@textlint-ja/textlint-rule-preset-ai-writing": "1.6.3",
 		"markdownlint-cli2": "0.22.0",
 		"npm-run-all2": "8.0.4",
 		"prettier": "3.8.1",
