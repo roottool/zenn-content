@@ -8,7 +8,7 @@
         "@textlint-ja/textlint-rule-preset-ai-writing": "1.7.0",
         "markdownlint-cli2": "0.24.1",
         "npm-run-all2": "9.0.4",
-        "prettier": "3.9.10",
+        "prettier": "3.10.1",
         "textlint": "15.8.0",
         "textlint-filter-rule-allowlist": "4.0.0",
         "textlint-rule-ja-unnatural-alphabet": "2.0.1",
@@ -1035,7 +1035,7 @@
 
     "prelude-ls": ["prelude-ls@1.2.1", "", {}, "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="],
 
-    "prettier": ["prettier@3.9.10", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-skGHTH1Yb9QvaTC4hWnRTzEYtCpApF0UMBPz+t/0ZPzP8ihefo/btKd+QA7pUE0fEwA1SbS/NmhyEcstdXOIdA=="],
+    "prettier": ["prettier@3.10.1", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-70vp3ZUYoPlFbF9uiTdXHUUCGEIp7d4+6p+8DYbkm2jP7x/3i/paXVF6dopSI3zd/CEitrZN1rc4i85xWmmXlg=="],
 
     "prh": ["prh@6.1.0", "", { "dependencies": { "commander": "^14.0.3", "diff": "^9.0.0", "js-yaml": "^4.1.0" }, "bin": { "prh": "bin/prh" } }, "sha512-FRJaF6DxCAhJwZZUkL20XmL+Fz2O79JFdcn35wdigm435A9G7WX9J5In6h6tCfmMzK/n4KVUjf68qmYMBHkqRQ=="],
 
